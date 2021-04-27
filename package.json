@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "mutation": "stryker run"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/tiagomar/mutation-testing#readme",
   "devDependencies": {
+    "@stryker-mutator/core": "^4.6.0",
+    "@stryker-mutator/jest-runner": "^4.6.0",
     "jest": "^26.6.3"
   }
 }
