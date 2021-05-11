@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
-    "mutation": "stryker run"
-  },
+    "mutation": "stryker run",
+    "mutation:diff": "git diff --name-only '*.js' | tr '\\n' ',' | xargs stryker run --mutate"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tiagomar/mutation-testing.git"
