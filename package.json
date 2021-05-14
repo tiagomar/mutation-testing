@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --coverage",
     "mutation": "stryker run",
-    "mutation:diff": "git diff --name-only '*.js' | tr '\\n' ',' | xargs stryker run --mutate"
+    "mutation:diff": "git diff --name-only '*.js' | grep -v .spec.js | tr '\\n' ',' | xargs stryker run --mutate"
 },
   "repository": {
     "type": "git",

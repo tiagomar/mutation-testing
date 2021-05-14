@@ -61,7 +61,7 @@ Examples of mutation testing frameworks
     $ npm run mutation:diff
 
     > mutation-testing@1.0.0 mutation:diff
-    > git diff --name-only '*.js' | tr '\\n' ',' | xargs stryker run --mutate
+    > git diff --name-only '*.js' | grep -v .spec.js | tr '\\n' ',' | xargs stryker run --mutate
     ```
   * Run only the tests that cover the changes
 
